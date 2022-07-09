@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: server
+server:
+  port: 8889
+app:
+  zookeeper-config:
+    host: localhost
+    port: 2181
