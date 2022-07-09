@@ -9,7 +9,11 @@
                         http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
+    <bean id="inboundAspect" class="com.mf.netty.gateway.aop.InboundAspect">
+
+    </bean>
 
     <context:component-scan base-package="com.mf.netty.gateway"/>
+    <aop:aspectj-autoproxy  />
 
 </beans>

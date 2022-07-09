@@ -11,9 +11,11 @@ import io.netty.handler.codec.http.FullHttpRequest;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Configuration
 @ChannelHandler.Sharable
 @RequiredArgsConstructor
 public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
