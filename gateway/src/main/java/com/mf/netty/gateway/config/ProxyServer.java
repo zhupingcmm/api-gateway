@@ -12,15 +12,13 @@ import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-@Component
+//@Component
 public class ProxyServer {
     private static Logger logger = LoggerFactory.getLogger(ProxyServer.class);
     private static final String ZK_ROOT = "/server";
 
     @Getter
     private Map<String, String> proxyServers = new HashMap<>();
-
-
 
     @PostConstruct
     public void initConnectToZk () {

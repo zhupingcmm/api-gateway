@@ -16,10 +16,9 @@ public class ThreadPool {
     private ThreadPoolExecutor service;
 
     public ThreadPool () {
-        init();
+        initPool();
     }
-    @PostConstruct
-    public void init () {
+    public void initPool () {
         int cores = Runtime.getRuntime().availableProcessors();
         service = new ThreadPoolExecutor(cores, cores, 5, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
     }
