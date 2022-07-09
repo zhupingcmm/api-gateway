@@ -28,14 +28,15 @@
         <maven.compiler.target>8</maven.compiler.target>
         <lombok.version>1.18.24</lombok.version>
         <zkclient.version>0.11</zkclient.version>
+        <netty.version>4.1.45.Final</netty.version>
+        <log4j.version>1.7.30</log4j.version>
+        <commons.version>1.2</commons.version>
+        <okhttp.version>3.12.2</okhttp.version>
+        <fastjson.version>1.2.70</fastjson.version>
+        <spring-version>4.3.29.RELEASE</spring-version>
     </properties>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.101tec</groupId>
                 <artifactId>zkclient</artifactId>
