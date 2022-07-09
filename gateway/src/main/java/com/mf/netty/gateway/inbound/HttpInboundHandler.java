@@ -25,6 +25,7 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
+        logger.info("HttpInboundHandler:: ");
         FullHttpRequest fullHttpRequest = (FullHttpRequest) msg;
         String method = String.valueOf(fullHttpRequest.method());
         logger.info("start to request");
